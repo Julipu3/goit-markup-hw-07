@@ -951,6 +951,7 @@ padding-bottom: 120px;
 
     .team-link {
         width: calc((100% - 48px) / 2);
+        margin-left: auto;
 
     }
     
@@ -970,6 +971,7 @@ padding-bottom: 120px;
 
     .section-discription {
         width: calc(100% / 2 - 24px);
+        margin-left: auto;
     }
 
     .section-title {
