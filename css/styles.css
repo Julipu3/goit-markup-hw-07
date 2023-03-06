@@ -32,7 +32,7 @@ img {
 }
 
 .container {
-    width: 428px;
+    max-width: 428px;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -97,7 +97,7 @@ img {
     text-decoration: none;
 }
 .site-nav {
-    display: flex;        
+    display: none;        
 }
 
 .site-nav .link {
@@ -144,7 +144,7 @@ img {
 }
 
 .auth-nav {
-    display: flex;  
+    display: none;  
 }
 
 .auth-nav .link {
@@ -236,7 +236,6 @@ color: var(--active-color);
     padding-bottom: 96px;
 }
 
-
 .icons-discription {
     display: none;
     justify-content: center;
@@ -246,6 +245,10 @@ color: var(--active-color);
     width: 264px;
     margin-bottom: 8px;
     border-radius: 4px;
+}
+
+.section-discription:not(:last-child) {
+    margin-bottom: 72px;
 }
 
 .section-title {
@@ -263,8 +266,9 @@ color: var(--active-color);
     line-height: 1.5;
     letter-spacing: 0.02; 
     color: var(--main-text-color);
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
+
 
 .section-doing {
     display: none;
@@ -322,8 +326,7 @@ padding-bottom: 120px;
 }
 
 .team-link:not(:last-child) {
-    margin-bottom: 72px; 
-    margin-right: 24px;
+    margin-bottom: 72px;
 }
 
 .team-info {
@@ -425,12 +428,17 @@ padding-bottom: 120px;
 
 /* ----FOOTER------ */
 .container-wrap {
-    width: 1158px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0 auto;
+    width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-media {
+    margin-bottom: 72px;
 }
 
 .contact-text {
@@ -440,6 +448,7 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     color: #E7E9FC;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .soc-list-footer {
@@ -467,12 +476,12 @@ padding-bottom: 120px;
     background: #31D0AA;
 }
 
-.form {
+/* .form {
     display: flex;
-}
+} */
 
 .email-box {
-    width: 264px;
+    width: 396px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -484,11 +493,14 @@ padding-bottom: 120px;
     padding-bottom: 8px;
     padding-left: 16px;
     outline: none;
-}
-
-.footer-form {
+    margin-bottom: 16px;
+    margin-right: auto;
     margin-left: auto;
 }
+
+/* .footer-form {
+    margin-left: auto;
+} */
 
 .footer-form .title {
     font-weight: 500;
@@ -497,6 +509,7 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     color: #E7E9FC;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .email-box::placeholder {
@@ -531,6 +544,9 @@ padding-bottom: 120px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer-btn:hover,
@@ -545,8 +561,8 @@ padding-bottom: 120px;
 
 .footer {
     background-color: var(--secondary-bgc);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-logo {
@@ -557,6 +573,7 @@ padding-bottom: 120px;
     text-transform: uppercase;
     color: #F4F4FD;
     text-decoration: none;
+    padding-left: 65px;
 }
 
 .footer-logo, .logo-one {
@@ -568,8 +585,7 @@ padding-bottom: 120px;
     color: #000000;
 }
 .logo-main-footer {
-    display: inline-block;
-    margin-right: 120px;
+    margin-bottom: 72px;
 }
 
 
@@ -930,13 +946,21 @@ padding-bottom: 120px;
     .container {
         max-width: 768px;
     }
-
-    .team>.container {
-        max-width: 552px;
+    
+    .hero-title {
+        margin-left: 137px;
+        margin-right: 137px;
+        margin-bottom: 40px;
     }
+
+    .main-team {
+        gap: 64px 24px;
+    }
+
 
     .team-link {
         width: calc((100% - 48px) / 2);
+
     }
     
     .costumers-list {
@@ -945,6 +969,20 @@ padding-bottom: 120px;
 
     .costumer-item {
         flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .qualities-items {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .section-discription {
+        width: calc(100% / 2 - 24px);
+    }
+
+    .section-title {
+        text-align: start;
     }
 
 }
