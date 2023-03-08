@@ -348,7 +348,7 @@ color: var(--active-color);
 }
 
 
-.section-doing {
+/* .section-doing {
 display: none;
 padding-bottom: 120px;
 }
@@ -374,7 +374,7 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     margin-bottom: 72px;
-}
+} */
 
 .team {
     background-color:#F4F4FD;
@@ -1222,4 +1222,94 @@ padding-bottom: 120px;
     padding-left: 15px;
     padding-right: 15px;
 }  
+
+.container-nav {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.logo {
+    margin-right: 72px;
+}
+
+.auth-nav {
+    display: flex;
+}
+
+.auth-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.auth-nav .link{
+    font-size: 16px;
+}
+
+.hero-title {
+    font-size: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    width: 496px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.qualities-items {
+    flex-wrap: nowrap;
+}
+
+.section-discription:not(:last-child) {
+    margin: 0;
+}
+
+.icons-discription {
+    display: flex;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.section-doing {
+    padding-bottom: 120px;
+}
+
+.possibilities-pics {
+    display: flex;
+}
+
+.pics {
+    width: 360px;
+}
+
+.pics:not(:last-child) {
+    margin-right: 24px;
+}
+
+.possibilities-title {
+    text-transform: capitalize;
+    background-color: var(--bgc);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    margin-bottom: 72px;
+}
+
+.main-team {
+    flex-wrap: nowrap;
+}
+.team-link:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+
 }
