@@ -129,7 +129,6 @@ img {
     height: 4px;
     left: 0px;
     bottom: -1px;
-    ;
     background-color: var(--active-color);
     border-radius: 2px;
 }
@@ -358,7 +357,7 @@ text-decoration: none;
 }
 .hero {
     background-color: var(--secondary-bgc);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1254,6 +1253,10 @@ padding-bottom: 120px;
         .menu-open {
             display: none;
         }
+
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet.jpg);
+        }
     
     .hero-title {
         margin-left: 137px;
@@ -1306,7 +1309,7 @@ padding-bottom: 120px;
         max-width: 768px;
         margin-left: 108px;
         justify-content: start;
-        padding-left: 0;
+    
     }
 
     .footer-logo {
@@ -1368,6 +1371,10 @@ padding-bottom: 120px;
 
 .auth-nav .link{
     font-size: 16px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 }
 
 .hero-title {
