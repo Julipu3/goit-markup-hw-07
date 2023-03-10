@@ -150,9 +150,15 @@
         <div class="container">
             <h2 class="possibilities-title">What are we doing</h2>
             <ul class="possibilities-pics">
-                <li class="pics"> <img src="./images/computer.jpg" alt="Computer" width="360"></li>
-                <li class="pics"> <img src="./images/iphones.jpg" alt="Iphones" width="360"></li>
-                <li class="pics"> <img src="./images/phone-hand.jpg" alt="Phone" width="360"></li>
+                <li class="pics"> <img 
+                    srcset="./images/computer.jpg 1x, ./images/computer2xx.jpg 2x"
+                    src="./images/computer.jpg" alt="Computer" width="360"></li>
+                <li class="pics"> <img 
+                    srcset="./images/iphones.jpg 1x, ./images/iphones2xx.jpg 2x"
+                    src="./images/iphones.jpg" alt="Iphones" width="360"></li>
+                <li class="pics"> <img 
+                    srcset="./images/phone-hand.jpg 1x, ./images/phone-hand2xx.jpg 2x"
+                    src="./images/phone-hand.jpg" alt="Phone" width="360"></li>
             </ul>
         </div>
         </section>
@@ -162,7 +168,9 @@
             <h2 class="team-title">Our Team</h2>
             <ul class="main-team">
                 <li class="team-link">
-                    <img src="./images/mark.jpg" alt="Mark Guerrero Product Designer" width="264">
+                    <img 
+                    srcset="./images/mark.jpg 1x, /images/mark2xx.jpg 2x"
+                    src="./images/mark.jpg" alt="Mark Guerrero Product Designer" width="264">
                     <div class="team-info"> 
                     <h3 class="team-person">Mark Guerrero</h3>
                     <p class="team-text ">Product Designer</p>
@@ -199,7 +207,9 @@
                     </div>
                 </li>
                 <li class="team-link">
-                    <img src="./images/tom.jpg" alt="Tom Ford Frontend Developer" width="264">
+                    <img 
+                    srcset="./images/tom.jpg 1x, ./images/tom2xx.jpg 2x"
+                    src="./images/tom.jpg" alt="Tom Ford Frontend Developer" width="264">
                     <div class="team-info">
                     <h3 class="team-person">Tom Ford</h3>
                     <p class="team-text ">Frontend Developer</p>
@@ -236,7 +246,9 @@
                     </div>
                 </li>
                 <li class="team-link">
-                    <img src="./images/camila.jpg" alt="Cfmila Garcia Marketing" width="264">
+                    <img 
+                    srcset="./images/camila.jpg 1x, ./images/camila2xx.jpg 2x"
+                    src="./images/camila.jpg" alt="Cfmila Garcia Marketing" width="264">
                     <div class="team-info">
                     <h3 class="team-person">Camila Garcia</h3>
                     <p class="team-text ">Marketing</p>
@@ -273,7 +285,9 @@
                     </div>
                 </li>
                 <li class="team-link">
-                    <img src="./images/last.jpg" alt="Daniel Wilson UI Designer" width="264" >
+                    <img 
+                    srcset="./images/last.jpg 1x, ./images/Daniel2xx.jpg 2x"
+                    src="./images/last.jpg" alt="Daniel Wilson UI Designer" width="264" >
                     <div class="team-info">
                     <h3 class="team-person">Daniel Wilson</h3>
                     <p class="team-text ">UI Designer</p>
@@ -455,7 +469,7 @@
         </span>
     </label>
     
-    
+
     <label class="modal-field"> 
         <span class="input-text"> Comment</span>
     <textarea class="comment" name="comment" placeholder="Text input"></textarea>
